@@ -7,8 +7,22 @@
 [root@localhost ~]# cd venv/
 [root @ localhost~]＃python3 -m venv ./venv
 进入虚拟环境：
-[root @ localhost~] #source  -  / venv / bin / activate
+[root @ localhost~] #source -/venv/bin/activate
 退出虚拟环境：
 [root @ localhost~] #exit
-安装瓶组件：
+安装flask组件：
 [root@localhost ~]# ~/venv/bin/pip install flask
+安装FLask-SQLALCHEMY:
+[root@localhost ~]# ~/venv/bin/pip install flask~/venv/bin/pip install flask-sqlalchemy pymysql
+安装Mariadb：
+[root@localhost ~]# yum list | grep mariadb
+[root@localhost ~]# yum install maria*
+开启Mariadb服务：
+[root@localhost ~]# systemctl start mariadb.service
+登录mysql:
+[root@localhost ~]# mysql -uroot -p'yourpassword'
+修改sql密码：
+[root@localhost ~]# mysql_secure_installation
+创建数据库（utf-8编码）：
+[root@localhost ~]# CREATE DATABASE 'your_db_name' CHARACTER SET utf8 COLLATE utf8_general_ci;
+
