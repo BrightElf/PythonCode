@@ -1,2 +1,14 @@
-yum install epel-release或者yum install epel-rpm-macros.noarch
-yum list | grep python3
+建立完整的python3环境：
+[root @ localhost~] #yum install epel-elease
+[root@localhost ~]# yum list | grep python3
+[root @ localhost~] #yum install python34.x86_64
+创建python3的虚拟环境：
+[root@localhost ~]# mkdir venv
+[root@localhost ~]# cd venv/
+[root @ localhost~]＃python3 -m venv ./venv
+进入虚拟环境：
+[root @ localhost~] #source  -  / venv / bin / activate
+退出虚拟环境：
+[root @ localhost~] #exit
+安装瓶组件：
+[root@localhost ~]# ~/venv/bin/pip install flask
