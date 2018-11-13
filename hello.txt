@@ -1,2 +1,4 @@
 欢迎来到了GitHub
-https://www.cnblogs.com/superGG1990/p/6844952.html
+GitHub教程：https://www.cnblogs.com/superGG1990/p/6844952.html
+虚拟机单用户模式：https://blog.csdn.net/noob_f/article/details/79056183
+
